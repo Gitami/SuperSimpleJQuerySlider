@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- html5 doctype -->
+<html lang="en">
+  <head> 
+    <title>Slider demo</title>
+
+    <!-- javascripts -->
+    <script src="jquery-1.7.2.min.js"></script> <!-- jQuery library, http://www.jquery.com -->
+    <script src="slider.js"></script> <!-- image slider --> 
+
+    <style type="text/css">
+      #imgslideshow{ 
+        position:relative;
+        height:322px;
+        width:465px;
+        position:relative;
+        top:10px;
+        z-index:2;
+      }
+      
+        #imgslideshow img{
+          position:absolute;
+        }
+        
+        #imgslideshow img.show{
+          z-index:1000;
+        }
+    </style>
+
+  </head>
+  <body>
+
+    <section id="imgslideshow">
+      <img class="show" src="wall-e.jpg" alt=""/>
+      <img src="taxidriver.jpg" alt=""/>
+      <img src="bbcnews.jpg" alt=""/>
+      <img src="animalplanet.jpg" alt=""/>
+      <img src="shawshankredemption.jpg" alt=""/>
+    </section>
+  
+  </body>
+</html>
